@@ -1,0 +1,15 @@
+<div class="container">
+    <form [formGroup]="storyForm" (ngSubmit)="autoSelectStories()">
+        <h2 class="mb-3">Sprint Calculator</h2>
+
+        <div class="mb-3">
+            <label for="sprintPoints" class="form-label">Sprint Point</label>
+            <input type="number" formControlName="targetPoint" class="form-control w-100" id="sprintPoints">
+        </div>
+        <div class="mb-3 buttons">
+            <button type="submit" class="btn btn-primary btn">Auto Select Stories</button>
+            <button type="button" (click)="clearStories()" class="btn btn-primary btn">Clear Stories</button>
+            <button type="button" (click)="clearSelectedStories()" class="btn btn-primary btn">Clear Selected Stories</button>
+        </div>  
+    </form>
+</div>
